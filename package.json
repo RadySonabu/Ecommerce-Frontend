@@ -10,10 +10,13 @@
   },
   "dependencies": {
     "autoprefixer": "^10.2.6",
+    "axios": "^0.21.1",
     "next": "11.0.0",
     "postcss": "^8.3.5",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-hook-form": "^7.11.1",
+    "react-query": "^3.19.0",
     "tailwindcss": "^2.2.0"
   },
   "devDependencies": {
@@ -24,6 +27,7 @@
     "eslint-config-airbnb-typescript": "^12.3.1",
     "eslint-config-next": "11.0.0",
     "eslint-config-prettier": "^8.1.0",
+    "eslint-config-tiu": "^1.0.2",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-prettier": "^3.3.1",

@@ -1,4 +1,5 @@
 import ErrorMessage from "@/compomemts/Form/ErrorMessage";
+import Link from "@/compomemts/Link";
 import { apiHandler } from "@/utils/apiHandler";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -26,7 +27,7 @@ const LoginPage = () => {
   };
   return (
     <div className="flex justify-center pt-20">
-      <div className="px-8 py-6 border shadow-sm w-[360px] max-w-[90vw]">
+      <div className="px-8 py-6 border shadow-sm w-[360px] max-w-[90vw] space-y-2">
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col ">
           <h1 className="mb-8 text-2xl font-bold">Login</h1>
           {errorMessage && <ErrorMessage message={errorMessage} />}
@@ -46,6 +47,9 @@ const LoginPage = () => {
             <span className={`${isSubmitting && "invisible"}`}>Log in</span>
           </button>
         </form>
+        <p className="text-sm">
+          Don&apos;t have an account? <Link href="/register" label="Register" />
+        </p>
       </div>
     </div>
   );
